@@ -21,6 +21,7 @@ import {
     AssignmentInd,
     Home,
     Apps,
+    Person,
     ContactMail,
     GitHub,
     LinkedIn,
@@ -42,12 +43,19 @@ const useStyles = makeStyles(theme => ({
     },
     listItem: {
         color: '#304D6D'
+    },
+    listIcon: {
+        color: '#BA5A31'
     }
 }));
 
 const menuItems = [
     {
         listIcon: <Home />,
+        listText: 'HOME'
+    },
+    {
+        listIcon: <Person />,
         listText: 'ABOUT ME'
     },
     {
@@ -93,18 +101,22 @@ const Navbar = () => {
 
     const sideNav = slider => (
         <Box
-        className={classes.menuSliderContainer}
-        component='div'
-        onClick={toggleSideNav('right', false)}
+            className={classes.menuSliderContainer}
+            component='div'
+            onClick={toggleSideNav('right', false)}
         >
             <Avatar className={classes.avatar} src={avatar} alt='Trevers avatar' />
-            <Divider  />
+            <Divider />
             <List>
                 {menuItems.map((lsItem, key) => (
                     <ListItem button key={key}>
-                        <ListItemIcon className={classes.listItem}>
-                            {lsItem.listIcon}
-                        </ListItemIcon>
+
+                        {/* weird circle shape for some reason */}
+                        {/* <IconButton style={{ background: '#304D6D' }}> */}
+                            <ListItemIcon className={classes.listIcon}>
+                                {lsItem.listIcon}
+                            </ListItemIcon>
+                        {/* </IconButton> */}
                         <ListItemText primary={lsItem.listText} className={classes.listItem} />
                     </ListItem>
                 ))}
@@ -117,9 +129,9 @@ const Navbar = () => {
             <Box component='nav'>
                 <AppBar position='static' style={{ background: '#304D6D' }}>
                     <Toolbar>
-                        <IconButton 
-                        onClick={toggleSideNav('right', true)}
-                        style={{ background: '#69DC9E' }}
+                        <IconButton
+                            onClick={toggleSideNav('right', true)}
+                            style={{ background: '#69DC9E' }}
                         >
                             <Menu style={{ color: '#BA5A31' }} />
                         </IconButton>
@@ -127,7 +139,7 @@ const Navbar = () => {
                             Portfolio
                     </Typography>
                         <MobilRightMenuSlider
-                        open={state.right}
+                            open={state.right}
                         >
                             {sideNav('right')}
                         </MobilRightMenuSlider>
