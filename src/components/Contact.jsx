@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from './Navbar';
 
-const Resume = () => {
+const Contact = () => {
     return (
         <>
             <Navbar />
-            Hello from Resume component
+            Hello from Contact component
         </>
-    );
-};
+    )
+}
 
-export default Resume;
+export default Contact

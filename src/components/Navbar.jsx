@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import avatar from '../img/trever-avatar.png';
 import { makeStyles } from '@material-ui/core/styles';
 import MobilRightMenuSlider from '@material-ui/core/Drawer';
@@ -24,8 +25,7 @@ import {
     Person,
     ContactMail,
     GitHub,
-    LinkedIn,
-    Facebook
+    LinkedIn
 } from '@material-ui/icons'
 
 // CSS styles
@@ -52,35 +52,38 @@ const useStyles = makeStyles(theme => ({
 const menuItems = [
     {
         listIcon: <Home />,
-        listText: 'HOME'
+        listText: 'HOME',
+        listPath: '/'
     },
     {
         listIcon: <Person />,
-        listText: 'ABOUT ME'
+        listText: 'ABOUT ME',
+        listPath: '/about'
     },
     {
         listIcon: <Apps />,
-        listText: 'PORTFOLIO'
+        listText: 'PORTFOLIO',
+        listPath: '/portfolio'
     },
     {
         listIcon: <GitHub />,
-        listText: 'GITHUB'
-    },
-    {
-        listIcon: <Facebook />,
-        listText: 'FACEBOOK'
+        listText: 'GITHUB',
+        listPath: '/github'
     },
     {
         listIcon: <LinkedIn />,
-        listText: 'LINKEDIN'
+        listText: 'LINKEDIN',
+        listPath: '/linkedin'
     },
     {
         listIcon: <ContactMail />,
-        listText: 'CONTACT ME'
+        listText: 'CONTACT ME',
+        listPath: '/contact'
     },
     {
         listIcon: <AssignmentInd />,
-        listText: 'RESUME'
+        listText: 'RESUME',
+        listPath: '/resume'
     },
     {
         listIcon: <MenuOpen />,
@@ -109,13 +112,13 @@ const Navbar = () => {
             <Divider />
             <List>
                 {menuItems.map((lsItem, key) => (
-                    <ListItem button key={key}>
+                    <ListItem button key={key} component={Link} to={lsItem.listPath}>
 
                         {/* weird circle shape for some reason */}
                         {/* <IconButton style={{ background: '#304D6D' }}> */}
-                            <ListItemIcon className={classes.listIcon}>
-                                {lsItem.listIcon}
-                            </ListItemIcon>
+                        <ListItemIcon className={classes.listIcon}>
+                            {lsItem.listIcon}
+                        </ListItemIcon>
                         {/* </IconButton> */}
                         <ListItemText primary={lsItem.listText} className={classes.listItem} />
                     </ListItem>
