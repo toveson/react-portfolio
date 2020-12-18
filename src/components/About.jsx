@@ -1,13 +1,15 @@
 import React from 'react';
 import Navbar from './Navbar';
+import TextAndImage from './TextAndImage';
+
 
 const About = () => {
     return (
         <>
             <Navbar />
-            Hello from About component
+            <TextAndImage />
         </>
     )
 }
 
-export default About
+export default About;

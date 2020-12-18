@@ -68,12 +68,14 @@ const menuItems = [
     {
         listIcon: <GitHub />,
         listText: 'GITHUB',
-        listPath: '/github'
+        listPath: '/github',
+        target: '_blank'
     },
     {
         listIcon: <LinkedIn />,
         listText: 'LINKEDIN',
-        listPath: '/linkedin'
+        listPath: '/linkedin',
+        target: '_blank'
     },
     {
         listIcon: <ContactMail />,
@@ -112,14 +114,13 @@ const Navbar = () => {
             <Divider />
             <List>
                 {menuItems.map((lsItem, key) => (
-                    <ListItem button key={key} component={Link} to={lsItem.listPath}>
+                    <ListItem button key={key} component={Link} to={lsItem.listPath} target={lsItem.target}>
 
-                        {/* weird circle shape for some reason */}
-                        {/* <IconButton style={{ background: '#304D6D' }}> */}
-                        <ListItemIcon className={classes.listIcon}>
-                            {lsItem.listIcon}
-                        </ListItemIcon>
-                        {/* </IconButton> */}
+
+                            <ListItemIcon className={classes.listIcon}>
+                                {lsItem.listIcon}
+                            </ListItemIcon>
+                            
                         <ListItemText primary={lsItem.listText} className={classes.listItem} />
                     </ListItem>
                 ))}
@@ -140,7 +141,7 @@ const Navbar = () => {
                         </IconButton>
                         <Typography variant='h5' style={{ color: '#69DC9E' }}>
                             Portfolio
-                    </Typography>
+                        </Typography>
                         <MobilRightMenuSlider
                             open={state.right}
                         >

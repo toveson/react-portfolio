@@ -1,8 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Avatar, Grid, Box,
-    //  Divider
-     } from '@material-ui/core';
+import { Typography, Avatar, Grid, Box } from '@material-ui/core';
 import Typed from 'react-typed';
 import avatar from '../img/trever-avatar.png';
 
@@ -11,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     avatar: {
         width: theme.spacing(25),
         height: theme.spacing(25),
-        margin: theme.spacing(5)
+        margin: theme.spacing(1)
 
     },
     title: {
@@ -26,7 +24,7 @@ const useStyles = makeStyles(theme => ({
         height: '100vh',
         textAlign: 'center',
     }
-}))
+}));
 
 const Header = () => {
     const classes = useStyles();
@@ -48,11 +46,13 @@ const Header = () => {
                 strings={[
                     'HTML',
                     'CSS',
-                    'JavaScript',
                     'Git',
-                    'Command Line',
-                    'JQuery',
                     'Bootstrap',
+                    'Heroku',
+                    'JavaScript',
+                    'JQuery',
+                    'Command Line',
+                    'APIs',
                     'UIKit',
                     'Bulma',
                     'Material UI',
