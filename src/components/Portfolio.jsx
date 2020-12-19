@@ -54,7 +54,7 @@ const projectInfo = [
         projectTitle: 'Pets Furever',
         projectImg: pets,
         projectAltImg: 'pets furever landing page',
-        ProjectDescription: 'A simple site to heelp you find a dog to adopt.',
+        ProjectDescription: 'A simple site to help you find a dog to adopt.',
         ProjectGitHub: 'https://github.com/toveson/pets-furever',
         ProjectLiveSite: 'https://toveson.github.io/pets-furever/'
     },
