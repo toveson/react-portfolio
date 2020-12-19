@@ -19,16 +19,15 @@ import weather from '../img/projectImages/dayPlanner.png';
 import pets from '../img/projectImages/petsFurever.png';
 import budget from '../img/projectImages/budgetTracker.png';
 import workout from '../img/projectImages/workoutTracker.png';
-// import classes from '*.module.css';
+
 
 const useStyles = makeStyles({
     mainContainer: {
-        background: '#69DC9E'
+        background: '#63ADF2'
     },
     cardContainer: {
         maxWidth: 345,
-        margin: '3rem',
-        // margin: '5rem auto'
+        margin: '3rem'
     },
     textContainer: {
         background: '#304D6D'
