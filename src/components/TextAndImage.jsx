@@ -30,10 +30,10 @@ const TextAndImage = () => {
 
     return (
         <Box className={classes.typedContainer}>
-            <Typography className={classes.title}>
+            {/* <Typography className={classes.title}>
                 About Me
             </Typography>
-            <Divider />
+            <Divider /> */}
             <Grid>
                 <Avatar className={classes.avatar} src={proPic} alt='Trevers pro picture' />
             </Grid>

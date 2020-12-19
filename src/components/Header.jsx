@@ -39,7 +39,7 @@ const Header = () => {
             </Typography>
                 {/* <Divider /> */}
             <Typography className={classes.subtitle} variant='h5'>
-                <Typed strings={['Web Devolopment Skills: ']} typeSpeed={100} />
+                <Typed strings={['Web Development Skills: ']} typeSpeed={100} />
             </Typography>
             <Typography className={classes.subtitle} variant='h5'>
                 <Typed 
