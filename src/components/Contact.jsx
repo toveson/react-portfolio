@@ -3,6 +3,18 @@ import Navbar from './Navbar';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import { TextField, Typography, Button, Grid, Box } from '@material-ui/core';
 import { Send } from '@material-ui/icons';
+import emailjs from 'emailjs-com';
+
+function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('portfolio', 'portfolio', e.target, 'user_fGSH8JqLjfyEeupbUAZyr')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
 
 const InputField = withStyles({
     root: {
@@ -60,7 +72,7 @@ const Contact = () => {
             <Navbar />
             <Box component='Div' className={classes.mainContainer}>
                 <Grid container justify='center'>
-                    <Box component='form' className={classes.form} style={{  background: '#304D6D' }}>
+                    <Box component='form' onSubmit={ sendEmail } className={classes.form} style={{  background: '#304D6D' }}>
                         <Typography variant='h5' className={classes.contact}>
                             Contact me
                         </Typography>
@@ -71,6 +83,7 @@ const Contact = () => {
                             inputProps={{ style: { color: '#69DC9E' } }}
                             margin='dense'
                             size='medium'
+                            name='name'
                         />
                         <InputField
                             fullWidth={true}
@@ -79,6 +92,16 @@ const Contact = () => {
                             inputProps={{ style: { color: '#69DC9E' } }}
                             margin='dense'
                             size='medium'
+                            name='email'
+                        />
+                        <InputField
+                            fullWidth={true}
+                            label='Subject'
+                            variant='outlined'
+                            inputProps={{ style: { color: '#69DC9E' } }}
+                            margin='dense'
+                            size='medium'
+                            name='message'
                         />
                         <InputField
                             fullWidth={true}
@@ -88,13 +111,13 @@ const Contact = () => {
                             margin='dense'
                             size='medium'
                             multiline
+                            name='message'
                         />
                         <Grid style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
                             <Button
                                 variant='outlined' fullWidth={true} endIcon={<Send style={{ color: '#BA5A31' }} />}
-                                // size='small'
                                 className={classes.button}
-                                // style={{ background: '#69DC9E' }}
+                                type='submit'
                             >
                                 Send 
                             </Button>

@@ -66,6 +66,16 @@ const menuItems = [
         listPath: '/portfolio'
     },
     {
+        listIcon: <ContactMail />,
+        listText: 'CONTACT ME',
+        listPath: '/contact'
+    },
+    {
+        listIcon: <AssignmentInd />,
+        listText: 'RESUME',
+        listPath: '/resume'
+    },
+    {
         listIcon: <GitHub />,
         listText: 'GITHUB',
         listPath: '/github',
@@ -76,16 +86,6 @@ const menuItems = [
         listText: 'LINKEDIN',
         listPath: '/linkedin',
         target: '_blank'
-    },
-    {
-        listIcon: <ContactMail />,
-        listText: 'CONTACT ME',
-        listPath: '/contact'
-    },
-    {
-        listIcon: <AssignmentInd />,
-        listText: 'RESUME',
-        listPath: '/resume'
     },
     {
         listIcon: <MenuOpen />,
