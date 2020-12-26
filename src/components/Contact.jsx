@@ -4,17 +4,19 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import { TextField, Typography, Button, Grid, Box } from '@material-ui/core';
 import { Send } from '@material-ui/icons';
 import emailjs from 'emailjs-com';
+// import Modal from './Modal';
 
 function sendEmail(e) {
     e.preventDefault();
 
     emailjs.sendForm('portfolio', 'portfolio', e.target, 'user_fGSH8JqLjfyEeupbUAZyr')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  }
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    e.target.reset();
+}
 
 const InputField = withStyles({
     root: {
@@ -38,8 +40,7 @@ const InputField = withStyles({
     }
 })(TextField);
 
-
-const useStyles = makeStyles(theme=>({
+const useStyles = makeStyles(theme => ({
     mainContainer: {
         background: '#63ADF2',
         height: '100vh'
@@ -52,9 +53,12 @@ const useStyles = makeStyles(theme=>({
 
     },
     button: {
-        marginTop: '1rem',
         color: '#69DC9E',
+        margin: '0.5rem',
         borderColor: '#BA5A31'
+    },
+    textBox: {
+        padding: '0 0.5rem',
     },
     contact: {
         color: '#69DC9E',
@@ -70,13 +74,14 @@ const Contact = () => {
     return (
         <>
             <Navbar />
-            <Box component='Div' className={classes.mainContainer}>
+            <Box component='div' className={classes.mainContainer}>
                 <Grid container justify='center'>
-                    <Box component='form' onSubmit={ sendEmail } className={classes.form} style={{  background: '#304D6D' }}>
+                    <Box component='form' onSubmit={sendEmail} className={classes.form} style={{ background: '#304D6D' }} borderRadius={16}>
                         <Typography variant='h5' className={classes.contact}>
                             Contact me
                         </Typography>
                         <InputField
+                            className={classes.textBox}
                             fullWidth={true}
                             label='Name'
                             variant='outlined'
@@ -86,6 +91,7 @@ const Contact = () => {
                             name='name'
                         />
                         <InputField
+                            className={classes.textBox}
                             fullWidth={true}
                             label='Email'
                             variant='outlined'
@@ -95,15 +101,17 @@ const Contact = () => {
                             name='email'
                         />
                         <InputField
+                            className={classes.textBox}
                             fullWidth={true}
                             label='Subject'
                             variant='outlined'
                             inputProps={{ style: { color: '#69DC9E' } }}
                             margin='dense'
                             size='medium'
-                            name='message'
+                            name='subject'
                         />
                         <InputField
+                            className={classes.textBox}
                             fullWidth={true}
                             label='Message'
                             variant='outlined'
@@ -115,16 +123,17 @@ const Contact = () => {
                         />
                         <Grid style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
                             <Button
-                                variant='outlined' fullWidth={true} endIcon={<Send style={{ color: '#BA5A31' }} />}
+                                variant='outlined' fullWidth={true}
+                                endIcon={<Send style={{ color: '#BA5A31' }} />}
                                 className={classes.button}
                                 type='submit'
                             >
-                                Send 
+                                Send
                             </Button>
                         </Grid>
                     </Box>
                 </Grid>
-        </Box>
+            </Box>
         </>
     )
 }

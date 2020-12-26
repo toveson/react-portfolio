@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import avatar from '../img/trever-avatar.png';
 import { makeStyles } from '@material-ui/core/styles';
 import MobilRightMenuSlider from '@material-ui/core/Drawer';
@@ -26,7 +26,7 @@ import {
     ContactMail,
     GitHub,
     LinkedIn
-} from '@material-ui/icons'
+} from '@material-ui/icons';
 
 // CSS styles
 const useStyles = makeStyles(theme => ({
@@ -93,6 +93,11 @@ const menuItems = [
     },
 ]
 
+const usePathname = () => {
+    const location = useLocation();
+    return location.pathname;
+}
+
 const Navbar = () => {
     const [state, setState] = useState({
         right: false
@@ -117,10 +122,10 @@ const Navbar = () => {
                     <ListItem button key={key} component={Link} to={lsItem.listPath} target={lsItem.target}>
 
 
-                            <ListItemIcon className={classes.listIcon}>
-                                {lsItem.listIcon}
-                            </ListItemIcon>
-                            
+                        <ListItemIcon className={classes.listIcon}>
+                            {lsItem.listIcon}
+                        </ListItemIcon>
+
                         <ListItemText primary={lsItem.listText} className={classes.listItem} />
                     </ListItem>
                 ))}
@@ -141,7 +146,7 @@ const Navbar = () => {
                             <Menu style={{ color: '#BA5A31' }} />
                         </IconButton>
                         <Typography variant='h5' style={{ color: '#69DC9E' }}>
-                            Portfolio
+                            {usePathname()}
                         </Typography>
                         <MobilRightMenuSlider
                             open={state.right}

@@ -39,7 +39,7 @@ const Header = () => {
             </Typography>
                 {/* <Divider /> */}
             <Typography className={classes.subtitle} variant='h5'>
-                <Typed strings={['Web Development Skills: ']} typeSpeed={100} />
+                <Typed strings={['Web Development Skills: ']} typeSpeed={100} startDelay={1300} />
             </Typography>
             <Typography className={classes.subtitle} variant='h5'>
                 <Typed 
@@ -64,8 +64,11 @@ const Header = () => {
                     'Passport',
                     'React.js'
                     ]} 
+                    startDelay={4400}
                     typeSpeed={70} 
                     backSpeed={40}
+                    backDelay={1000}
+                    shuffle={true}
                     loop
                     />
             </Typography>
