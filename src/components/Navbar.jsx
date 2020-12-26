@@ -95,7 +95,11 @@ const menuItems = [
 
 const usePathname = () => {
     const location = useLocation();
-    return location.pathname;
+    let path = location.pathname;
+    let locationObject = menuItems.find( ({ listPath }) => listPath === path)
+    let text = locationObject.listText;
+
+    return text;
 }
 
 const Navbar = () => {
