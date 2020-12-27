@@ -100,8 +100,7 @@ const Portfolio = () => {
     return (
         <Box component='div' className={classes.mainContainer}>
             <Navbar />
-
-
+            
             {projectInfo.map((lsItem, key) => (
                 <Grid container justify='center' key={key}>
                     <Grid item xs={12} sm={8} md={6}>
@@ -121,20 +120,20 @@ const Portfolio = () => {
                                         {lsItem.ProjectDescription}
                                     </Typography>
                                 </CardContent>
-                                <CardActions style={{display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
+                                <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
                                     <IconButton
-                                    size='small'
-                                    className={classes.buttonContainer}
-                                    style={{ background: '#69DC9E' }}
-                                    href={lsItem.ProjectGitHub} target='_blank'
+                                        size='small'
+                                        className={classes.buttonContainer}
+                                        style={{ background: '#69DC9E' }}
+                                        href={lsItem.ProjectGitHub} target='_blank'
                                     >
                                         <GitHub style={{ color: '#BA5A31' }} />
                                     </IconButton>
                                     <IconButton
-                                    size='small'
-                                    className={classes.buttonContainer}
-                                    style={{ background: '#69DC9E' }}
-                                    href={lsItem.ProjectLiveSite} target='_blank'
+                                        size='small'
+                                        className={classes.buttonContainer}
+                                        style={{ background: '#69DC9E' }}
+                                        href={lsItem.ProjectLiveSite} target='_blank'
                                     >
                                         <Language style={{ color: '#BA5A31' }} />
                                     </IconButton>

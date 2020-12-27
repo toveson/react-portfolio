@@ -58,10 +58,10 @@ const Header = () => {
                     'Material UI',
                     'Handlebars',
                     'Node.js',
-                    'Express.js',
+                    'Express js',
                     'MongoDB',
                     'MySQL',
-                    'Passport',
+                    'Passport js',
                     'React.js'
                     ]} 
                     startDelay={4400}

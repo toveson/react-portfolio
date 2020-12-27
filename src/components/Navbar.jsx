@@ -93,6 +93,7 @@ const menuItems = [
     },
 ]
 
+// update the name of the page on the navbar
 const usePathname = () => {
     const location = useLocation();
     let path = location.pathname;
@@ -149,7 +150,7 @@ const Navbar = () => {
                         >
                             <Menu style={{ color: '#BA5A31' }} />
                         </IconButton>
-                        <Typography variant='h5' style={{ color: '#69DC9E' }}>
+                        <Typography variant='h5' style={{ color: '#69DC9E', paddingLeft: '0.5rem' }}>
                             {usePathname()}
                         </Typography>
                         <MobilRightMenuSlider

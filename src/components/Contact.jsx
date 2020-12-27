@@ -118,7 +118,7 @@ const Contact = () => {
                             inputProps={{ style: { color: '#69DC9E' } }}
                             margin='dense'
                             size='medium'
-                            multiline
+                            multiline={true}
                             name='message'
                         />
                         <Grid style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
@@ -130,6 +130,7 @@ const Contact = () => {
                             >
                                 Send
                             </Button>
+                            {/* <Modal /> */}
                         </Grid>
                     </Box>
                 </Grid>
