@@ -31,6 +31,7 @@ import mysql from '../img/resumeImages/mysql-logo.png';
 import node from '../img/resumeImages/node-js-log.png';
 import passport from '../img/resumeImages/passport-logo.png';
 import uikit from '../img/resumeImages/uikit-logo.png';
+import resume from '../img/resumeImages/Trever Oveson Resume.pdf';
 
 const useStyles = makeStyles({
     mainContainer: {
@@ -69,7 +70,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='pdf icon'
                             height='100'
                             image={pdf}
                         />
@@ -84,7 +85,7 @@ const Resume = () => {
                                 endIcon={<GetApp style={{ color: '#BA5A31' }} />}
                                 className={classes.buttonText}
                                 // <a link href="./assets/Resume.pdf" target="_blank">Click here for a pdf of my resume</a>
-                                href=''
+                                href={resume}
                                 target='_blank'
                             >
                                 Download
@@ -97,7 +98,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='html icon'
                             height='100'
                             image={html}
                         />
@@ -124,7 +125,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='css icon'
                             height='100'
                             image={css}
                         />
@@ -151,7 +152,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='javascript icon'
                             height='100'
                             image={javascript}
                         />
@@ -178,7 +179,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='material ui icon'
                             height='100'
                             image={materialUi}
                         />
@@ -205,7 +206,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='bootstrap icon'
                             height='100'
                             image={bootstrap}
                         />
@@ -232,7 +233,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='bulma icon'
                             height='100'
                             image={bulma}
                         />
@@ -259,7 +260,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='express icon'
                             height='100'
                             image={express}
                         />
@@ -286,7 +287,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='git icon'
                             height='100'
                             image={git}
                         />
@@ -313,7 +314,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='handlebars icon'
                             height='100'
                             image={handlebars}
                         />
@@ -340,7 +341,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='heroku icon'
                             height='100'
                             image={heroku}
                         />
@@ -367,7 +368,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='jquery icon'
                             height='100'
                             image={jquery}
                         />
@@ -394,7 +395,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='mongodb icon'
                             height='100'
                             image={mongodb}
                         />
@@ -421,7 +422,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='mysql icon'
                             height='100'
                             image={mysql}
                         />
@@ -448,7 +449,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='node icon'
                             height='100'
                             image={node}
                         />
@@ -475,7 +476,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='passport icon'
                             height='100'
                             image={passport}
                         />
@@ -502,7 +503,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='uikit icon'
                             height='100'
                             image={uikit}
                         />
@@ -529,7 +530,7 @@ const Resume = () => {
                     <Card>
                         <CardMedia
                             component='img'
-                            alt=''
+                            alt='commandLine icon'
                             height='100'
                             image={commandLine}
                         />
