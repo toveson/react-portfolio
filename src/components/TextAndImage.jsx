@@ -15,12 +15,13 @@ const useStyles = makeStyles(theme => ({
         color: '#304D6D'
     },
     subtitle: {
-        color: '#304D6D'
+        color: '#304D6D',
+        padding: 15
     },
     typedContainer: {
         backgroundColor: '#63ADF2',
         width: '100vw',
-        height: '100vh'
+        height: '100vh',
     }
 }));
 
@@ -30,10 +31,6 @@ const TextAndImage = () => {
 
     return (
         <Box className={classes.typedContainer}>
-            {/* <Typography className={classes.title}>
-                About Me
-            </Typography>
-            <Divider /> */}
             <Grid>
                 <Avatar className={classes.avatar} src={proPic} alt='Trevers pro picture' />
             </Grid>

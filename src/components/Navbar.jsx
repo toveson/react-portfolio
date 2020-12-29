@@ -125,7 +125,7 @@ const Navbar = () => {
             <List>
                 {menuItems.map((lsItem, key) => (
                     <ListItem button key={key} component={Link} to={lsItem.listPath} target={lsItem.target}>
-
+                            
 
                         <ListItemIcon className={classes.listIcon}>
                             {lsItem.listIcon}

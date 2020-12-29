@@ -4,7 +4,11 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import { TextField, Typography, Button, Grid, Box } from '@material-ui/core';
 import { Send } from '@material-ui/icons';
 import emailjs from 'emailjs-com';
-// import Modal from './Modal';
+import Dialog from '@material-ui/core/Dialog';
+// import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 function sendEmail(e) {
     e.preventDefault();
@@ -68,8 +72,20 @@ const useStyles = makeStyles(theme => ({
 }))
 
 
-const Contact = () => {
+
+export default function Contact() {
     const classes = useStyles();
+
+    // for modal
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     return (
         <>
@@ -127,10 +143,25 @@ const Contact = () => {
                                 endIcon={<Send style={{ color: '#BA5A31' }} />}
                                 className={classes.button}
                                 type='submit'
+                                onClick={handleClickOpen}
                             >
                                 Send
                             </Button>
-                            {/* <Modal /> */}
+
+                            {/* modal */}
+                            <Dialog
+                                open={open}
+                                onClose={handleClose}
+                                aria-labelledby="alert-dialog-title"
+                                aria-describedby="alert-dialog-description"
+                            >
+                                <DialogTitle id="alert-dialog-title">{"Your message has been sent!"}</DialogTitle>
+                                <DialogContent>
+                                    <DialogContentText id="alert-dialog-description">
+                                        Thank you for taking the time to contact me!
+                                    </DialogContentText>
+                                </DialogContent>
+                            </Dialog>
                         </Grid>
                     </Box>
                 </Grid>
@@ -139,4 +170,5 @@ const Contact = () => {
     )
 }
 
-export default Contact;
+
+// export default Contact;
