@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f4d00ebf.chunk.css",
+    "main.js": "/static/js/main.1fcde8b3.chunk.js",
+    "main.js.map": "/static/js/main.1fcde8b3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.112f52ad.js",
+    "runtime-main.js.map": "/static/js/runtime-main.112f52ad.js.map",
+    "static/js/2.827f4f1c.chunk.js": "/static/js/2.827f4f1c.chunk.js",
+    "static/js/2.827f4f1c.chunk.js.map": "/static/js/2.827f4f1c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.f4d00ebf.chunk.css.map": "/static/css/main.f4d00ebf.chunk.css.map",
+    "static/js/2.827f4f1c.chunk.js.LICENSE.txt": "/static/js/2.827f4f1c.chunk.js.LICENSE.txt",
+    "static/media/Trever Oveson Resume.abca716c.pdf": "/static/media/Trever Oveson Resume.abca716c.pdf",
+    "static/media/bootstrap-logo.31308e1f.png": "/static/media/bootstrap-logo.31308e1f.png",
+    "static/media/budgetTracker.48847304.png": "/static/media/budgetTracker.48847304.png",
+    "static/media/burger.5e702ec4.png": "/static/media/burger.5e702ec4.png",
+    "static/media/command-line-logo.f445a4a6.jpg": "/static/media/command-line-logo.f445a4a6.jpg",
+    "static/media/css3-logo.71f6c1af.png": "/static/media/css3-logo.71f6c1af.png",
+    "static/media/dayPlanner.52cf51ba.png": "/static/media/dayPlanner.52cf51ba.png",
+    "static/media/express-js-logo.d20c87ac.png": "/static/media/express-js-logo.d20c87ac.png",
+    "static/media/handlebars-logo.a0ec0ec8.png": "/static/media/handlebars-logo.a0ec0ec8.png",
+    "static/media/jquery-logo.1501357f.jpg": "/static/media/jquery-logo.1501357f.jpg",
+    "static/media/material-ui-logo.5b2d8a0a.png": "/static/media/material-ui-logo.5b2d8a0a.png",
+    "static/media/mongodb-log.41ae1969.png": "/static/media/mongodb-log.41ae1969.png",
+    "static/media/mysql-logo.3540c241.png": "/static/media/mysql-logo.3540c241.png",
+    "static/media/node-js-log.e71346fe.png": "/static/media/node-js-log.e71346fe.png",
+    "static/media/passport-logo.fae36061.png": "/static/media/passport-logo.fae36061.png",
+    "static/media/petsFurever.ff1286a1.png": "/static/media/petsFurever.ff1286a1.png",
+    "static/media/pro-picture.6a002682.png": "/static/media/pro-picture.6a002682.png",
+    "static/media/taskablyDash.128385a1.png": "/static/media/taskablyDash.128385a1.png",
+    "static/media/trever-avatar.b771790c.png": "/static/media/trever-avatar.b771790c.png",
+    "static/media/uikit-logo.45f04fe0.png": "/static/media/uikit-logo.45f04fe0.png",
+    "static/media/workoutTracker.6eefe42a.png": "/static/media/workoutTracker.6eefe42a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.112f52ad.js",
+    "static/js/2.827f4f1c.chunk.js",
+    "static/css/main.f4d00ebf.chunk.css",
+    "static/js/main.1fcde8b3.chunk.js"
+  ]
+}
