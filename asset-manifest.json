@@ -1,41 +1,20 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.f4d00ebf.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.50798000.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.50798000.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.d92f1a37.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.d92f1a37.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.cdcd8a89.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.cdcd8a89.js.map",
-    "static/js/2.827f4f1c.chunk.js": "/react-portfolio/static/js/2.827f4f1c.chunk.js",
-    "static/js/2.827f4f1c.chunk.js.map": "/react-portfolio/static/js/2.827f4f1c.chunk.js.map",
+    "static/js/2.525a5cda.chunk.js": "/react-portfolio/static/js/2.525a5cda.chunk.js",
+    "static/js/2.525a5cda.chunk.js.map": "/react-portfolio/static/js/2.525a5cda.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
     "static/css/main.f4d00ebf.chunk.css.map": "/react-portfolio/static/css/main.f4d00ebf.chunk.css.map",
-    "static/js/2.827f4f1c.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.827f4f1c.chunk.js.LICENSE.txt",
-    "static/media/Trever Oveson Resume.abca716c.pdf": "/react-portfolio/static/media/Trever Oveson Resume.abca716c.pdf",
-    "static/media/bootstrap-logo.31308e1f.png": "/react-portfolio/static/media/bootstrap-logo.31308e1f.png",
-    "static/media/budgetTracker.48847304.png": "/react-portfolio/static/media/budgetTracker.48847304.png",
-    "static/media/burger.5e702ec4.png": "/react-portfolio/static/media/burger.5e702ec4.png",
-    "static/media/command-line-logo.f445a4a6.jpg": "/react-portfolio/static/media/command-line-logo.f445a4a6.jpg",
-    "static/media/css3-logo.71f6c1af.png": "/react-portfolio/static/media/css3-logo.71f6c1af.png",
-    "static/media/dayPlanner.52cf51ba.png": "/react-portfolio/static/media/dayPlanner.52cf51ba.png",
-    "static/media/express-js-logo.d20c87ac.png": "/react-portfolio/static/media/express-js-logo.d20c87ac.png",
-    "static/media/handlebars-logo.a0ec0ec8.png": "/react-portfolio/static/media/handlebars-logo.a0ec0ec8.png",
-    "static/media/jquery-logo.1501357f.jpg": "/react-portfolio/static/media/jquery-logo.1501357f.jpg",
-    "static/media/material-ui-logo.5b2d8a0a.png": "/react-portfolio/static/media/material-ui-logo.5b2d8a0a.png",
-    "static/media/mongodb-log.41ae1969.png": "/react-portfolio/static/media/mongodb-log.41ae1969.png",
-    "static/media/mysql-logo.3540c241.png": "/react-portfolio/static/media/mysql-logo.3540c241.png",
-    "static/media/node-js-log.e71346fe.png": "/react-portfolio/static/media/node-js-log.e71346fe.png",
-    "static/media/passport-logo.fae36061.png": "/react-portfolio/static/media/passport-logo.fae36061.png",
-    "static/media/petsFurever.ff1286a1.png": "/react-portfolio/static/media/petsFurever.ff1286a1.png",
-    "static/media/pro-picture.6a002682.png": "/react-portfolio/static/media/pro-picture.6a002682.png",
-    "static/media/taskablyDash.128385a1.png": "/react-portfolio/static/media/taskablyDash.128385a1.png",
-    "static/media/trever-avatar.b771790c.png": "/react-portfolio/static/media/trever-avatar.b771790c.png",
-    "static/media/uikit-logo.45f04fe0.png": "/react-portfolio/static/media/uikit-logo.45f04fe0.png",
-    "static/media/workoutTracker.6eefe42a.png": "/react-portfolio/static/media/workoutTracker.6eefe42a.png"
+    "static/js/2.525a5cda.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.525a5cda.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cdcd8a89.js",
-    "static/js/2.827f4f1c.chunk.js",
+    "static/js/2.525a5cda.chunk.js",
     "static/css/main.f4d00ebf.chunk.css",
-    "static/js/main.50798000.chunk.js"
+    "static/js/main.d92f1a37.chunk.js"
   ]
 }
