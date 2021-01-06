@@ -36,7 +36,7 @@ import resume from '../img/resumeImages/Trever Oveson Resume.pdf';
 const useStyles = makeStyles({
     mainContainer: {
         background: '#63ADF2',
-        // height: '100vh'
+        // height: '100'
     },
     root: {
         maxWidth: 125,
@@ -47,6 +47,11 @@ const useStyles = makeStyles({
         color: '#69DC9E',
         fontSize: '0.75rem',
         height: 0
+    },
+    headerText: {
+        color: '#69DC9E',
+        fontSize: '2.5rem',
+        textAlign: 'center'
     },
     textContainer: {
         background: '#304D6D',
@@ -64,7 +69,10 @@ const Resume = () => {
         <Box component='div' className={classes.mainContainer}>
             <Navbar />
 
-            <Grid container>
+            <Typography variant='h5' className={classes.headerText}>
+                Resume and Languages
+            </Typography>
+            <Grid container justify='center'>
                 {/* resume download */}
                 <Grid className={classes.root}>
                     <Card>
@@ -174,6 +182,11 @@ const Resume = () => {
                         </CardActions>
                     </Card>
                 </Grid>
+            </Grid>
+            <Typography variant='h5' className={classes.headerText}>
+                Skills and Libraries
+            </Typography>
+            <Grid container justify='center'>
                 {/* material ui */}
                 <Grid className={classes.root}>
                     <Card>
@@ -186,7 +199,7 @@ const Resume = () => {
                         <CardContent className={classes.textContainer}>
                             <Typography variant='h5' className={classes.textColor}>
                                 Material Ui
-                                </Typography>
+                            </Typography>
                         </CardContent>
                         <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
                             <Button

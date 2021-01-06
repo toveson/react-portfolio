@@ -23,10 +23,11 @@ import workout from '../img/projectImages/workoutTracker.png';
 
 const useStyles = makeStyles({
     mainContainer: {
-        background: '#63ADF2'
+        background: '#63ADF2',
+        height: '100%'
     },
     cardContainer: {
-        maxWidth: 345,
+        maxWidth: 540,
         margin: '3rem'
     },
     textContainer: {
@@ -109,7 +110,7 @@ const Portfolio = () => {
                                 <CardMedia
                                     component='img'
                                     alt={lsItem.projectAltImg}
-                                    height='140'
+                                    height='280'
                                     image={lsItem.projectImg}
                                 />
                                 <CardContent className={classes.textContainer}>
