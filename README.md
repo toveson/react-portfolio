@@ -6,7 +6,7 @@ A portfolio built using react and material ui.
 
 
 <!-- need to update site once it's live -->
-Link to live site: [user-directory](https://toveson.github.io/user-directory/)
+Link to live site: [react-portfolio](https://toveson.github.io/react-portfolio/#/)
 
 ![portfolio](./src/img/portfolio-landing-page.png)
 
