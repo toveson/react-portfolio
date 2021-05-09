@@ -44,12 +44,12 @@ const useStyles = makeStyles({
 
 const projectInfo = [
     {
-        projectTitle: 'Taskably',
+        projectTitle: 'Taskably 2.0',
         projectImg: taskably,
         projectAltImg: 'Taskably Dashboard',
         ProjectDescription: 'A program to manage products, orders, employees, and customers.',
-        ProjectGitHub: 'https://github.com/ReddPhoenix/taskably',
-        ProjectLiveSite: 'https://arcane-wildwood-67330.herokuapp.com/'
+        ProjectGitHub: 'https://github.com/toveson/taskably-2.0',
+        ProjectLiveSite: 'https://arcane-sands-96523.herokuapp.com/'
     },
     {
         projectTitle: 'Pets Furever',
