@@ -64,8 +64,8 @@ const projectInfo = [
         projectImg: weather,
         projectAltImg: 'weather dashboard landing page',
         ProjectDescription: 'Easily search a city to get the current weather as well as a five day forecast.',
-        ProjectGitHub: 'https://toveson.github.io/Weather-Dashboard/',
-        ProjectLiveSite: 'https://github.com/toveson/password-generator'
+        ProjectGitHub: 'https://github.com/toveson/password-generator',
+        ProjectLiveSite: 'https://toveson.github.io/Weather-Dashboard/'
     },
     {
         projectTitle: 'Workout-Tracker',

@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import { TextField, Typography, Button, Grid, Box } from '@material-ui/core';
 import { Send } from '@material-ui/icons';
 import emailjs from 'emailjs-com';
@@ -8,6 +8,7 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import useStyles from './css/MaterialUIStyles';
 
 function sendEmail(e) {
     e.preventDefault();
@@ -43,32 +44,32 @@ const InputField = withStyles({
     }
 })(TextField);
 
-const useStyles = makeStyles(theme => ({
-    mainContainer: {
-        background: '#63ADF2',
-        height: '100vh'
-    },
-    form: {
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        position: 'absolute'
+// const useStyles = makeStyles(theme => ({
+//     mainContainer: {
+//         background: '#63ADF2',
+//         height: '100vh'
+//     },
+//     form: {
+//         top: '50%',
+//         left: '50%',
+//         transform: 'translate(-50%, -50%)',
+//         position: 'absolute'
 
-    },
-    button: {
-        color: '#69DC9E',
-        margin: '0.5rem',
-        borderColor: '#BA5A31'
-    },
-    textBox: {
-        padding: '0 0.5rem',
-    },
-    contact: {
-        color: '#69DC9E',
-        textAlign: 'center',
-        textTransform: 'uppercase'
-    }
-}))
+//     },
+//     button: {
+//         color: '#69DC9E',
+//         margin: '0.5rem',
+//         borderColor: '#BA5A31'
+//     },
+//     textBox: {
+//         padding: '0 0.5rem',
+//     },
+//     contact: {
+//         color: '#69DC9E',
+//         textAlign: 'center',
+//         textTransform: 'uppercase'
+//     }
+// }))
 
 
 
