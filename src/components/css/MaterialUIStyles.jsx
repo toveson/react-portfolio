@@ -77,6 +77,25 @@ const useStyles = makeStyles(theme => ({
         background: '#63ADF2',
         height: '100%'
     },
+    root: {
+        maxWidth: 125,
+        padding: 10,
+        margin: 12
+    },
+    resumeTextColor: {
+        color: '#69DC9E',
+        fontSize: '0.75rem',
+        height: 0
+    },
+    headerText: {
+        color: '#69DC9E',
+        fontSize: '2.5rem',
+        textAlign: 'center'
+    },
+    buttonText: {
+        color: '#69DC9E',
+        fontSize: '0.5rem'
+    }
 }));
 
 export default useStyles;

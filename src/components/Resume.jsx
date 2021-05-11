@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import {
     Box,
     Grid,
@@ -32,35 +32,36 @@ import node from '../img/resumeImages/node-js-log.png';
 import passport from '../img/resumeImages/passport-logo.png';
 import uikit from '../img/resumeImages/uikit-logo.png';
 import resume from '../img/resumeImages/trever-oveson-resume.pdf';
+import useStyles from './css/MaterialUIStyles';
 
-const useStyles = makeStyles({
-    mainContainer: {
-        background: '#63ADF2',
-        height: '100vh'
-    },
-    root: {
-        maxWidth: 125,
-        padding: 10,
-        margin: 12
-    },
-    textColor: {
-        color: '#69DC9E',
-        fontSize: '0.75rem',
-        height: 0
-    },
-    headerText: {
-        color: '#69DC9E',
-        fontSize: '2.5rem',
-        textAlign: 'center'
-    },
-    textContainer: {
-        background: '#304D6D',
-    },
-    buttonText: {
-        color: '#69DC9E',
-        fontSize: '0.5rem'
-    }
-});
+// const useStyles = makeStyles({
+//     // mainContainer: {
+//     //     background: '#63ADF2',
+//     //     height: '100vh'
+//     // },
+//     // root: {
+//     //     maxWidth: 125,
+//     //     padding: 10,
+//     //     margin: 12
+//     // },
+//     // textColor: {
+//     //     color: '#69DC9E',
+//     //     fontSize: '0.75rem',
+//     //     height: 0
+//     // },
+//     // headerText: {
+//     //     color: '#69DC9E',
+//     //     fontSize: '2.5rem',
+//     //     textAlign: 'center'
+//     // },
+//     // textContainer: {
+//     //     background: '#304D6D',
+//     // },
+//     buttonText: {
+//         color: '#69DC9E',
+//         fontSize: '0.5rem'
+//     }
+// });
 
 const Resume = () => {
     const classes = useStyles();
@@ -83,7 +84,7 @@ const Resume = () => {
                             image={pdf}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 My Resume
                                 </Typography>
                         </CardContent>
@@ -111,7 +112,7 @@ const Resume = () => {
                             image={html}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 HTML
                                 </Typography>
                         </CardContent>
@@ -138,7 +139,7 @@ const Resume = () => {
                             image={css}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 CSS
                                 </Typography>
                         </CardContent>
@@ -165,7 +166,7 @@ const Resume = () => {
                             image={javascript}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 JAVASCRIPT
                                 </Typography>
                         </CardContent>
@@ -197,7 +198,7 @@ const Resume = () => {
                             image={materialUi}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 Material Ui
                             </Typography>
                         </CardContent>
@@ -224,7 +225,7 @@ const Resume = () => {
                             image={bootstrap}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 BOOTSTRAP
                                 </Typography>
                         </CardContent>
@@ -251,7 +252,7 @@ const Resume = () => {
                             image={bulma}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 BULMA
                                 </Typography>
                         </CardContent>
@@ -278,7 +279,7 @@ const Resume = () => {
                             image={express}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 EXPRESS
                                 </Typography>
                         </CardContent>
@@ -305,7 +306,7 @@ const Resume = () => {
                             image={git}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 GIT
                                 </Typography>
                         </CardContent>
@@ -332,7 +333,7 @@ const Resume = () => {
                             image={handlebars}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 HANDLEBARS
                                 </Typography>
                         </CardContent>
@@ -359,7 +360,7 @@ const Resume = () => {
                             image={heroku}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 HEROKU
                                 </Typography>
                         </CardContent>
@@ -386,7 +387,7 @@ const Resume = () => {
                             image={jquery}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 JQUERY
                                 </Typography>
                         </CardContent>
@@ -413,7 +414,7 @@ const Resume = () => {
                             image={mongodb}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 MONGODB
                                 </Typography>
                         </CardContent>
@@ -440,7 +441,7 @@ const Resume = () => {
                             image={mysql}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 MYSQL
                                 </Typography>
                         </CardContent>
@@ -467,7 +468,7 @@ const Resume = () => {
                             image={node}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 NODE JS
                                 </Typography>
                         </CardContent>
@@ -494,7 +495,7 @@ const Resume = () => {
                             image={passport}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 PASSPORT
                                 </Typography>
                         </CardContent>
@@ -521,7 +522,7 @@ const Resume = () => {
                             image={uikit}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 UIKIT
                                 </Typography>
                         </CardContent>
@@ -548,7 +549,7 @@ const Resume = () => {
                             image={commandLine}
                         />
                         <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.textColor}>
+                            <Typography variant='h5' className={classes.resumeTextColor}>
                                 COMMAND
                                 </Typography>
                         </CardContent>
