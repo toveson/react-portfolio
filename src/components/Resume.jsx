@@ -1,5 +1,4 @@
 import React from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
 import {
     Box,
     Grid,
@@ -33,35 +32,6 @@ import passport from '../img/resumeImages/passport-logo.png';
 import uikit from '../img/resumeImages/uikit-logo.png';
 import resume from '../img/resumeImages/trever-oveson-resume.pdf';
 import useStyles from './css/MaterialUIStyles';
-
-// const useStyles = makeStyles({
-//     // mainContainer: {
-//     //     background: '#63ADF2',
-//     //     height: '100vh'
-//     // },
-//     // root: {
-//     //     maxWidth: 125,
-//     //     padding: 10,
-//     //     margin: 12
-//     // },
-//     // textColor: {
-//     //     color: '#69DC9E',
-//     //     fontSize: '0.75rem',
-//     //     height: 0
-//     // },
-//     // headerText: {
-//     //     color: '#69DC9E',
-//     //     fontSize: '2.5rem',
-//     //     textAlign: 'center'
-//     // },
-//     // textContainer: {
-//     //     background: '#304D6D',
-//     // },
-//     buttonText: {
-//         color: '#69DC9E',
-//         fontSize: '0.5rem'
-//     }
-// });
 
 const Resume = () => {
     const classes = useStyles();

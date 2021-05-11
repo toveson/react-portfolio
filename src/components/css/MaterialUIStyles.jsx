@@ -95,7 +95,20 @@ const useStyles = makeStyles(theme => ({
     buttonText: {
         color: '#69DC9E',
         fontSize: '0.5rem'
-    }
+    },
+    aboutMeAvatar: {
+        display: 'block',
+        width: theme.spacing(25),
+        height: theme.spacing(25),
+        padding: theme.spacing(1)
+    },
+    aboutMeTitle: {
+        color: '#304D6D'
+    },
+    aboutMeSubtitle: {
+        color: '#304D6D',
+        padding: 15
+    },
 }));
 
 export default useStyles;
