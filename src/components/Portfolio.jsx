@@ -71,8 +71,6 @@ const projectInfo = [
     }
 ]
 
-
-
 const Portfolio = () => {
     const classes = useStyles();
 
