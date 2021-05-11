@@ -31,12 +31,12 @@ import mysql from '../img/resumeImages/mysql-logo.png';
 import node from '../img/resumeImages/node-js-log.png';
 import passport from '../img/resumeImages/passport-logo.png';
 import uikit from '../img/resumeImages/uikit-logo.png';
-import resume from '../img/resumeImages/resume.pdf';
+import resume from '../img/resumeImages/trever-oveson-resume.pdf';
 
 const useStyles = makeStyles({
     mainContainer: {
         background: '#63ADF2',
-        // height: '100'
+        height: '100vh'
     },
     root: {
         maxWidth: 125,

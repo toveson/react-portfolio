@@ -41,6 +41,24 @@ const useStyles = makeStyles(theme => ({
         color: '#69DC9E',
         textAlign: 'center',
         textTransform: 'uppercase'
+    },
+    avatarHome: {
+        width: theme.spacing(25),
+        height: theme.spacing(25),
+        margin: theme.spacing(1)
+
+    },
+    title: {
+        color: '#304D6D'
+    },
+    subtitle: {
+        color: '#ba5a31'
+    },
+    typedContainer: {
+        backgroundColor: '#63ADF2',
+        width: '100vw',
+        height: '100vh',
+        textAlign: 'center',
     }
 }));
 

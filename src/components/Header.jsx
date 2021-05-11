@@ -1,30 +1,8 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Avatar, Grid, Box } from '@material-ui/core';
 import Typed from 'react-typed';
 import avatar from '../img/trever-avatar.png';
-
-// CSS styles
-const useStyles = makeStyles(theme => ({
-    avatar: {
-        width: theme.spacing(25),
-        height: theme.spacing(25),
-        margin: theme.spacing(1)
-
-    },
-    title: {
-        color: '#304D6D'
-    },
-    subtitle: {
-        color: '#ba5a31'
-    },
-    typedContainer: {
-        backgroundColor: '#63ADF2',
-        width: '100vw',
-        height: '100vh',
-        textAlign: 'center',
-    }
-}));
+import useStyles from './css/MaterialUIStyles';
 
 const Header = () => {
     const classes = useStyles();
@@ -32,7 +10,7 @@ const Header = () => {
     return (
         <Box className={classes.typedContainer}>
             <Grid container justify='center'>
-            <Avatar className={classes.avatar} src={avatar} alt='Trevers avatar' />
+            <Avatar className={classes.avatarHome} src={avatar} alt='Trevers avatar' />
             </Grid>
             <Typography className={classes.title} variant='h4'>
                 <Typed strings={['Trever Oveson']} typeSpeed={70} />
