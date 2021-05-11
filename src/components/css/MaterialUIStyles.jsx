@@ -97,7 +97,6 @@ const useStyles = makeStyles(theme => ({
         fontSize: '0.5rem'
     },
     aboutMeAvatar: {
-        display: 'block',
         width: theme.spacing(25),
         height: theme.spacing(25),
         padding: theme.spacing(1)

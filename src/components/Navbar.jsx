@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import avatar from '../img/trever-avatar.png';
-import { makeStyles } from '@material-ui/core/styles';
 import MobilRightMenuSlider from '@material-ui/core/Drawer';
 import {
     AppBar,
@@ -27,29 +26,7 @@ import {
     GitHub,
     LinkedIn
 } from '@material-ui/icons';
-// import useStyles from './css';
-
-
-// CSS styles
-const useStyles = makeStyles(theme => ({
-    menuSliderContainer: {
-        width: 250,
-        background: '#69DC9E',
-        height: '100%'
-    },
-    avatar: {
-        display: 'block',
-        margin: '.05rem auto',
-        width: theme.spacing(12),
-        height: theme.spacing(12)
-    },
-    listItem: {
-        color: '#304D6D'
-    },
-    listIcon: {
-        color: '#BA5A31'
-    }
-}));
+import useStyles from './css/MaterialUIStyles';
 
 const menuItems = [
     {
