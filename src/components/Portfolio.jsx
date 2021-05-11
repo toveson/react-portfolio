@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import {
     Box,
     Grid,
@@ -19,28 +18,7 @@ import weather from '../img/projectImages/dayPlanner.png';
 import pets from '../img/projectImages/petsFurever.png';
 import budget from '../img/projectImages/budgetTracker.png';
 import workout from '../img/projectImages/workoutTracker.png';
-
-
-const useStyles = makeStyles({
-    mainContainer: {
-        background: '#63ADF2',
-        height: '100%'
-    },
-    cardContainer: {
-        maxWidth: 540,
-        margin: '3rem'
-    },
-    textContainer: {
-        background: '#304D6D'
-    },
-    textColor: {
-        color: '#69DC9E'
-    },
-    buttonContainer: {
-        color: '#63ADF2'
-    }
-
-})
+import useStyles from './css/MaterialUIStyles';
 
 const projectInfo = [
     {
@@ -99,7 +77,7 @@ const Portfolio = () => {
     const classes = useStyles();
 
     return (
-        <Box component='div' className={classes.mainContainer}>
+        <Box component='div' className={classes.portfolioContainer}>
             <Navbar />
             
             {projectInfo.map((lsItem, key) => (

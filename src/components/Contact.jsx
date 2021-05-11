@@ -44,35 +44,6 @@ const InputField = withStyles({
     }
 })(TextField);
 
-// const useStyles = makeStyles(theme => ({
-//     mainContainer: {
-//         background: '#63ADF2',
-//         height: '100vh'
-//     },
-//     form: {
-//         top: '50%',
-//         left: '50%',
-//         transform: 'translate(-50%, -50%)',
-//         position: 'absolute'
-
-//     },
-//     button: {
-//         color: '#69DC9E',
-//         margin: '0.5rem',
-//         borderColor: '#BA5A31'
-//     },
-//     textBox: {
-//         padding: '0 0.5rem',
-//     },
-//     contact: {
-//         color: '#69DC9E',
-//         textAlign: 'center',
-//         textTransform: 'uppercase'
-//     }
-// }))
-
-
-
 export default function Contact() {
     const classes = useStyles();
 

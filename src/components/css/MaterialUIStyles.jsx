@@ -59,7 +59,24 @@ const useStyles = makeStyles(theme => ({
         width: '100vw',
         height: '100vh',
         textAlign: 'center',
-    }
+    },
+    cardContainer: {
+        maxWidth: 540,
+        margin: '3rem'
+    },
+    textContainer: {
+        background: '#304D6D'
+    },
+    textColor: {
+        color: '#69DC9E'
+    },
+    buttonContainer: {
+        color: '#63ADF2'
+    },
+    portfolioContainer: {
+        background: '#63ADF2',
+        height: '100%'
+    },
 }));
 
 export default useStyles;
