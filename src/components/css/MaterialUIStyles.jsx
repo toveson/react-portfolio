@@ -52,7 +52,7 @@ const useStyles = makeStyles(theme => ({
         color: '#304D6D'
     },
     subtitle: {
-        color: '#ba5a31'
+        color: '#BA5A31'
     },
     typedContainer: {
         backgroundColor: '#63ADF2',
@@ -102,7 +102,8 @@ const useStyles = makeStyles(theme => ({
         padding: theme.spacing(1)
     },
     aboutMeTitle: {
-        color: '#304D6D'
+        color: '#304D6D',
+        margin: 10
     },
     aboutMeSubtitle: {
         color: '#304D6D',
