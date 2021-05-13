@@ -107,7 +107,8 @@ const useStyles = makeStyles(theme => ({
     },
     aboutMeSubtitle: {
         color: '#304D6D',
-        padding: 15
+        padding: 15,
+        margin: 20
     },
 }));
 
