@@ -75,52 +75,66 @@ const Portfolio = () => {
     const classes = useStyles();
 
     return (
-        <Box component='div' className={classes.portfolioContainer}>
+        <>
             <Navbar />
-            
-            {projectInfo.map((lsItem, key) => (
-                <Grid container justify='center' key={key}>
-                    <Grid item xs={12} sm={8} md={6}>
-                        <Card className={classes.cardContainer}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component='img'
-                                    alt={lsItem.projectAltImg}
-                                    height='280'
-                                    image={lsItem.projectImg}
-                                />
-                                <CardContent className={classes.textContainer}>
-                                    <Typography gutterBottom variant='h5' className={classes.textColor}>
-                                        {lsItem.projectTitle}
-                                    </Typography>
-                                    <Typography variant='body2' color='textSecondary' component='p' className={classes.textColor}>
-                                        {lsItem.ProjectDescription}
-                                    </Typography>
-                                </CardContent>
-                                <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                                    <IconButton
-                                        size='small'
-                                        className={classes.buttonContainer}
-                                        style={{ background: '#69DC9E' }}
-                                        href={lsItem.ProjectGitHub} target='_blank'
-                                    >
-                                        <GitHub style={{ color: '#BA5A31' }} />
-                                    </IconButton>
-                                    <IconButton
-                                        size='small'
-                                        className={classes.buttonContainer}
-                                        style={{ background: '#69DC9E' }}
-                                        href={lsItem.ProjectLiveSite} target='_blank'
-                                    >
-                                        <Language style={{ color: '#BA5A31' }} />
-                                    </IconButton>
-                                </CardActions>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
+            <Box component='div' className={classes.portfolioContainer}>
+                <Grid item 
+                // xs={12} 
+                // sm={8} 
+                // md={6}
+                >
+                    {projectInfo.map((lsItem, key) => (
+                        <Grid container 
+                        justify='center' 
+                        key={key}
+                        >
+                            <Grid item 
+                            // xs={12} 
+                            // sm={8} 
+                            // md={6}
+                            >
+                                <Card className={classes.cardContainer}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                            component='img'
+                                            alt={lsItem.projectAltImg}
+                                            height='280'
+                                            image={lsItem.projectImg}
+                                        />
+                                        <CardContent className={classes.textContainer}>
+                                            <Typography gutterBottom variant='h5' className={classes.textColor}>
+                                                {lsItem.projectTitle}
+                                            </Typography>
+                                            <Typography variant='body2' color='textSecondary' component='p' className={classes.textColor}>
+                                                {lsItem.ProjectDescription}
+                                            </Typography>
+                                        </CardContent>
+                                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
+                                            <IconButton
+                                                size='small'
+                                                className={classes.buttonContainer}
+                                                style={{ background: '#69DC9E' }}
+                                                href={lsItem.ProjectGitHub} target='_blank'
+                                            >
+                                                <GitHub style={{ color: '#BA5A31' }} />
+                                            </IconButton>
+                                            <IconButton
+                                                size='small'
+                                                className={classes.buttonContainer}
+                                                style={{ background: '#69DC9E' }}
+                                                href={lsItem.ProjectLiveSite} target='_blank'
+                                            >
+                                                <Language style={{ color: '#BA5A31' }} />
+                                            </IconButton>
+                                        </CardActions>
+                                    </CardActionArea>
+                                </Card>
+                            </Grid>
+                        </Grid>
+                    ))}
                 </Grid>
-            ))}
-        </Box>
+            </Box>
+        </>
     )
 }
 
