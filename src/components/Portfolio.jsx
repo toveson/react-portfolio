@@ -79,9 +79,9 @@ const Portfolio = () => {
             <Navbar />
             <Box component='div' className={classes.portfolioContainer}>
                 <Grid item 
-                // xs={12} 
-                // sm={8} 
-                // md={6}
+                xs={12} 
+                sm={8} 
+                md={6}
                 >
                     {projectInfo.map((lsItem, key) => (
                         <Grid container 
