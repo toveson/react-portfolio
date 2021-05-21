@@ -78,16 +78,9 @@ const Portfolio = () => {
         <>
             <Navbar />
             <Box component='div' className={classes.portfolioContainer}>
-                <Grid container
-                    justify='center'
-                    // xs={10}
-                    // sm={4}
-                    // md={5}
-                >
+                <Grid container justify='center'>
                     {projectInfo.map((lsItem, key) => (
-                        <Grid item
-                            key={key}
-                        >
+                        <Grid item key={key}>
                             <Card className={classes.cardContainer}>
                                 <CardActionArea>
                                     <CardMedia

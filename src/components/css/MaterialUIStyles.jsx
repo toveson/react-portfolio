@@ -60,10 +60,6 @@ const useStyles = makeStyles(theme => ({
         height: '100vh',
         textAlign: 'center',
     },
-    cardContainer: {
-        maxWidth: 540,
-        margin: '3rem'
-    },
     textContainer: {
         background: '#304D6D'
     },
@@ -76,7 +72,11 @@ const useStyles = makeStyles(theme => ({
     portfolioContainer: {
         background: '#63ADF2',
         height: '100%',
-        padding: 'auto'
+    },
+    cardContainer: {
+        maxWidth: 540,
+        margin: '3rem',
+        borderRadius: 25
     },
     root: {
         maxWidth: 125,
