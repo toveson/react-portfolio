@@ -94,8 +94,8 @@ const useStyles = makeStyles(theme => ({
         textAlign: 'center'
     },
     buttonText: {
-        color: '#69DC9E',
-        fontSize: '0.5rem',
+        color: '#69DC9E!important',
+        fontSize: '0.5rem!important',
         borderRadius: 25
     },
     aboutMeAvatar: {
