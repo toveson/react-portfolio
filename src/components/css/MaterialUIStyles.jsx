@@ -61,7 +61,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: 'center',
     },
     textContainer: {
-        background: '#304D6D'
+        background: '#304D6D',
     },
     textColor: {
         color: '#69DC9E'
@@ -81,7 +81,7 @@ const useStyles = makeStyles(theme => ({
     root: {
         maxWidth: 125,
         padding: 10,
-        margin: 12
+        margin: 12,
     },
     resumeTextColor: {
         color: '#69DC9E',
@@ -95,7 +95,8 @@ const useStyles = makeStyles(theme => ({
     },
     buttonText: {
         color: '#69DC9E',
-        fontSize: '0.5rem'
+        fontSize: '0.5rem',
+        borderRadius: 25
     },
     aboutMeAvatar: {
         width: theme.spacing(25),
