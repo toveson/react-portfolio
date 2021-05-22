@@ -38,25 +38,33 @@ const languages = [
         langImg: pdf,
         altImg: 'pdf down load',
         text: 'My Resume',
-        docLink: resume
+        docLink: resume,
+        btnTxt: 'DOWNLOAD',
+        btnIcon: GetApp
     },
     {
         langImg: html,
         altImg: 'html shield',
         text: 'HTML',
-        docLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+        docLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+        btnTxt: 'INFO',
+        btnIcon: Language
     },
     {
         langImg: css,
         altImg: 'css shield',
         text: 'CSS',
-        docLink: 'https://developer.mozilla.org/en-US/docs/Glossary/CSS'
+        docLink: 'https://developer.mozilla.org/en-US/docs/Glossary/CSS',
+        btnTxt: 'INFO',
+        btnIcon: Language
     },
     {
         langImg: javascript,
         altImg: 'javascript shield',
         text: 'JAVASCRIPT',
-        docLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+        docLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+        btnTxt: 'INFO',
+        btnIcon: Language
     }
 ]
 
@@ -177,12 +185,12 @@ const Resume = () => {
                                 <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
                                     <Button
                                         variant='outlined' fullWidth={true}
-                                        endIcon={<Language style={{ color: '#BA5A31' }} />}
+                                        endIcon={<lsItem.btnIcon style={{ color: '#BA5A31' }} />}
                                         className={classes.buttonText}
                                         href={lsItem.docLink}
                                         target='_blank'
                                     >
-                                        info
+                                        {lsItem.btnTxt}
                                     </Button>
                                 </CardActions>
                             </Card>
