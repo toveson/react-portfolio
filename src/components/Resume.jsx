@@ -33,6 +33,120 @@ import uikit from '../img/resumeImages/uikit-logo.png';
 import resume from '../img/resumeImages/trever-oveson-resume.pdf';
 import useStyles from './css/MaterialUIStyles';
 
+const languages = [
+    {
+        langImg: pdf,
+        altImg: 'pdf down load',
+        text: 'My Resume',
+        docLink: resume
+    },
+    {
+        langImg: html,
+        altImg: 'html shield',
+        text: 'HTML',
+        docLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+    },
+    {
+        langImg: css,
+        altImg: 'css shield',
+        text: 'CSS',
+        docLink: 'https://developer.mozilla.org/en-US/docs/Glossary/CSS'
+    },
+    {
+        langImg: javascript,
+        altImg: 'javascript shield',
+        text: 'JAVASCRIPT',
+        docLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+    }
+]
+
+const skills = [
+    {
+        skillImg: materialUi,
+        altImg: 'Material UI logo',
+        text: 'Material Ui',
+        docLink: 'https://material-ui.com/'
+    },
+    {
+        skillImg: bootstrap,
+        altImg: 'Bootstrap logo',
+        text: 'BOOTSTRAP',
+        docLink: 'https://getbootstrap.com/'
+    },
+    {
+        skillImg: bulma,
+        altImg: 'Bulma logo',
+        text: 'BULMA',
+        docLink: 'https://bulma.io/'
+    },
+    {
+        skillImg: express,
+        altImg: 'express logo',
+        text: 'EXPRESS',
+        docLink: 'https://expressjs.com/'
+    },
+    {
+        skillImg: git,
+        altImg: 'git logo',
+        text: 'GIT',
+        docLink: 'https://git-scm.com/'
+    },
+    {
+        skillImg: handlebars,
+        altImg: 'handlebars logo',
+        text: 'HANDLEBARS',
+        docLink: 'https://handlebarsjs.com/'
+    },
+    {
+        skillImg: heroku,
+        altImg: 'heroku logo',
+        text: 'HEROKU',
+        docLink: 'https://www.heroku.com/'
+    },
+    {
+        skillImg: jquery,
+        altImg: 'jquery logo',
+        text: 'JQUERY',
+        docLink: ''
+    },
+    {
+        skillImg: mongodb,
+        altImg: 'mongodb logo',
+        text: 'MONGO DB',
+        docLink: ''
+    },
+    {
+        skillImg: mysql,
+        altImg: 'mysql logo',
+        text: 'MYSQL',
+        docLink: ''
+    },
+    {
+        skillImg: node,
+        altImg: 'node logo',
+        text: 'NODE',
+        docLink: ''
+    },
+    {
+        skillImg: passport,
+        altImg: 'passport logo',
+        text: 'PASSPORT',
+        docLink: ''
+    },
+    {
+        skillImg: uikit,
+        altImg: 'uikit logo',
+        text: 'UIKIT',
+        docLink: ''
+    },
+    {
+        skillImg: commandLine,
+        altImg: 'command logo',
+        text: 'CLI',
+        docLink: ''
+    },
+]
+
 const Resume = () => {
     const classes = useStyles();
 
@@ -43,500 +157,78 @@ const Resume = () => {
             <Typography variant='h5' className={classes.headerText}>
                 Resume and Languages
             </Typography>
-            <Grid container justify='center'>
-                {/* resume download */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='pdf icon'
-                            height='100'
-                            image={pdf}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                My Resume
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<GetApp style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                // <a link href="./assets/Resume.pdf" target="_blank">Click here for a pdf of my resume</a>
-                                href={resume}
-                                target='_blank'
-                            >
-                                Download
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* html */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='html icon'
-                            height='100'
-                            image={html}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                HTML
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://developer.mozilla.org/en-US/docs/Web/HTML'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* css */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='css icon'
-                            height='100'
-                            image={css}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                CSS
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://developer.mozilla.org/en-US/docs/Glossary/CSS'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* javascript */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='javascript icon'
-                            height='100'
-                            image={javascript}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                JAVASCRIPT
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
+            <Grid container>
+                {/* resume and languages */}
+                <Grid container  justify='center'>
+                    {languages.map((lsItem, key) =>
+                        <Grid item key={key} className={classes.root}>
+                            <Card>
+                                <CardMedia
+                                    component='img'
+                                    alt={lsItem.altImg}
+                                    height='100'
+                                    image={lsItem.langImg}
+                                />
+                                <CardContent className={classes.textContainer}>
+                                    <Typography variant='h5' align={'center'} className={classes.resumeTextColor}>
+                                        {lsItem.text}
+                                    </Typography>
+                                </CardContent>
+                                <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
+                                    <Button
+                                        variant='outlined' fullWidth={true}
+                                        endIcon={<Language style={{ color: '#BA5A31' }} />}
+                                        className={classes.buttonText}
+                                        href={lsItem.docLink}
+                                        target='_blank'
+                                    >
+                                        info
+                                    </Button>
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                    )}
                 </Grid>
             </Grid>
+
             <Typography variant='h5' className={classes.headerText}>
                 Skills and Libraries
             </Typography>
-            <Grid container justify='center'>
-                {/* material ui */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='material ui icon'
-                            height='100'
-                            image={materialUi}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                Material Ui
-                            </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://material-ui.com/'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* bootstrap */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='bootstrap icon'
-                            height='100'
-                            image={bootstrap}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                BOOTSTRAP
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://getbootstrap.com/'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* bulma */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='bulma icon'
-                            height='100'
-                            image={bulma}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                BULMA
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://bulma.io/'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* express */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='express icon'
-                            height='100'
-                            image={express}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                EXPRESS
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://expressjs.com/'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* git */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='git icon'
-                            height='100'
-                            image={git}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                GIT
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://git-scm.com/'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* handlebars */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='handlebars icon'
-                            height='100'
-                            image={handlebars}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                HANDLEBARS
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://handlebarsjs.com/'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* heroku */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='heroku icon'
-                            height='100'
-                            image={heroku}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                HEROKU
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://www.heroku.com/'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* jquery */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='jquery icon'
-                            height='100'
-                            image={jquery}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                JQUERY
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://jquery.com/'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* mongodb */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='mongodb icon'
-                            height='100'
-                            image={mongodb}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                MONGODB
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://www.mongodb.com/what-is-mongodb'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* mysql */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='mysql icon'
-                            height='100'
-                            image={mysql}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                MYSQL
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://www.mysql.com/'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* node */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='node icon'
-                            height='100'
-                            image={node}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                NODE JS
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://nodejs.org/en/'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* passport */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='passport icon'
-                            height='100'
-                            image={passport}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                PASSPORT
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='http://www.passportjs.org/'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* uikit */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='uikit icon'
-                            height='100'
-                            image={uikit}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                UIKIT
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://getuikit.com/'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                {/* commandLine */}
-                <Grid className={classes.root}>
-                    <Card>
-                        <CardMedia
-                            component='img'
-                            alt='commandLine icon'
-                            height='100'
-                            image={commandLine}
-                        />
-                        <CardContent className={classes.textContainer}>
-                            <Typography variant='h5' className={classes.resumeTextColor}>
-                                COMMAND
-                                </Typography>
-                        </CardContent>
-                        <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                            <Button
-                                variant='outlined' fullWidth={true}
-                                endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                className={classes.buttonText}
-                                href='https://developer.mozilla.org/en-US/docs/Mozilla/Command_Line_Options'
-                                target='_blank'
-                            >
-                                info
-                                </Button>
-                        </CardActions>
-                    </Card>
+
+            <Grid container>
+                {/* skill and Libraries */}
+                <Grid container  justify='center'>
+                    {skills.map((lsItem, key) =>
+                        <Grid item key={key} className={classes.root}>
+                            <Card>
+                                <CardMedia
+                                    component='img'
+                                    alt={lsItem.altImg}
+                                    height='100'
+                                    image={lsItem.skillImg}
+                                />
+                                <CardContent className={classes.textContainer}>
+                                    <Typography variant='h5' align={'center'} className={classes.resumeTextColor}>
+                                        {lsItem.text}
+                                    </Typography>
+                                </CardContent>
+                                <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
+                                    <Button
+                                        variant='outlined' fullWidth={true}
+                                        endIcon={<Language style={{ color: '#BA5A31' }} />}
+                                        className={classes.buttonText}
+                                        href={lsItem.docLink}
+                                        target='_blank'
+                                    >
+                                        info
+                                    </Button>
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                    )}
                 </Grid>
             </Grid>
+
         </Box>
     )
 }

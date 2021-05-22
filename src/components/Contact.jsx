@@ -50,7 +50,7 @@ export default function Contact() {
     // for modal
     const [open, setOpen] = React.useState(false);
 
-    const handleClickOpen = () => {
+    const handleOpen = () => {
         setOpen(true);
     };
 
@@ -114,7 +114,7 @@ export default function Contact() {
                                 endIcon={<Send style={{ color: '#BA5A31' }} />}
                                 className={classes.button}
                                 type='submit'
-                                onClick={handleClickOpen}
+                                onClick={handleOpen}
                             >
                                 Send
                             </Button>
