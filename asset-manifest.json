@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.f4d00ebf.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.327b53f5.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.327b53f5.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.377aff1f.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.377aff1f.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.cdcd8a89.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.cdcd8a89.js.map",
     "static/js/2.bcbb7199.chunk.js": "/react-portfolio/static/js/2.bcbb7199.chunk.js",
@@ -15,7 +15,6 @@
     "static/media/burger.5e702ec4.png": "/react-portfolio/static/media/burger.5e702ec4.png",
     "static/media/command-line-logo.f445a4a6.jpg": "/react-portfolio/static/media/command-line-logo.f445a4a6.jpg",
     "static/media/css3-logo.71f6c1af.png": "/react-portfolio/static/media/css3-logo.71f6c1af.png",
-    "static/media/dayPlanner.52cf51ba.png": "/react-portfolio/static/media/dayPlanner.52cf51ba.png",
     "static/media/express-js-logo.d20c87ac.png": "/react-portfolio/static/media/express-js-logo.d20c87ac.png",
     "static/media/handlebars-logo.a0ec0ec8.png": "/react-portfolio/static/media/handlebars-logo.a0ec0ec8.png",
     "static/media/jquery-logo.1501357f.jpg": "/react-portfolio/static/media/jquery-logo.1501357f.jpg",
@@ -30,12 +29,13 @@
     "static/media/trever-avatar.b771790c.png": "/react-portfolio/static/media/trever-avatar.b771790c.png",
     "static/media/trever-oveson-resume.9d3301dc.pdf": "/react-portfolio/static/media/trever-oveson-resume.9d3301dc.pdf",
     "static/media/uikit-logo.45f04fe0.png": "/react-portfolio/static/media/uikit-logo.45f04fe0.png",
+    "static/media/weatherDashboard.e12ab7b4.png": "/react-portfolio/static/media/weatherDashboard.e12ab7b4.png",
     "static/media/workoutTracker.6eefe42a.png": "/react-portfolio/static/media/workoutTracker.6eefe42a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cdcd8a89.js",
     "static/js/2.bcbb7199.chunk.js",
     "static/css/main.f4d00ebf.chunk.css",
-    "static/js/main.327b53f5.chunk.js"
+    "static/js/main.377aff1f.chunk.js"
   ]
 }
