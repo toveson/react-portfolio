@@ -14,7 +14,7 @@ import { GitHub, Language } from '@material-ui/icons'
 import Navbar from './Navbar';
 import taskably from '../img/projectImages/taskablyDash.png';
 import burger from '../img/projectImages/burger.png';
-import weather from '../img/projectImages/dayPlanner.png';
+import weather from '../img/projectImages/weatherDashboard.png';
 import pets from '../img/projectImages/petsFurever.png';
 import budget from '../img/projectImages/budgetTracker.png';
 import workout from '../img/projectImages/workoutTracker.png';
@@ -42,7 +42,7 @@ const projectInfo = [
         projectImg: weather,
         projectAltImg: 'weather dashboard landing page',
         ProjectDescription: 'Easily search a city to get the current weather as well as a five day forecast.',
-        ProjectGitHub: 'https://github.com/toveson/password-generator',
+        ProjectGitHub: 'https://github.com/toveson/Weather-Dashboard',
         ProjectLiveSite: 'https://toveson.github.io/Weather-Dashboard/'
     },
     {
