@@ -75,9 +75,9 @@ const menuItems = [
 // update the name of the page on the navbar
 const usePathname = () => {
     const location = useLocation();
-    let path = location.pathname;
-    let locationObject = menuItems.find( ({ listPath }) => listPath === path)
-    let text = locationObject.listText;
+    const path = location.pathname;
+    const locationObject = menuItems.find( ({ listPath }) => listPath === path)
+    const text = locationObject.listText;
 
     return text;
 }

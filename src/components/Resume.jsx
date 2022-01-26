@@ -31,6 +31,12 @@ import node from '../img/resumeImages/node-js-log.png';
 import passport from '../img/resumeImages/passport-logo.png';
 import uikit from '../img/resumeImages/uikit-logo.png';
 import resume from '../img/resumeImages/trever-oveson-resume.pdf';
+
+import reactLogo from '../img/resumeImages/react.png';
+
+// import reactLogo from '../img/resumeImages/logo.svg';
+// import './css/App.css'
+
 import useStyles from './css/MaterialUIStyles';
 
 const languages = [
@@ -69,6 +75,18 @@ const languages = [
 ]
 
 const skills = [
+    {
+        skillImg: reactLogo,
+        altImg: 'React Logo',
+        text: 'React',
+        docLink: 'https://reactjs.org/'
+    },
+    {
+        skillImg: reactLogo,
+        altImg: 'React Logo',
+        text: 'React Native',
+        docLink: 'https://reactnative.dev/'
+    },
     {
         skillImg: materialUi,
         altImg: 'Material UI logo',
@@ -176,6 +194,7 @@ const Resume = () => {
                                     alt={lsItem.altImg}
                                     height='100'
                                     image={lsItem.langImg}
+                                    className={lsItem.className}
                                 />
                                 <CardContent className={classes.textContainer}>
                                     <Typography variant='h5' align={'center'} className={classes.resumeTextColor}>
