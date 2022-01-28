@@ -108,10 +108,14 @@ const useStyles = makeStyles(theme => ({
         margin: 10
     },
     aboutMeSubtitle: {
-        color: '#304D6D',
         padding: 15,
-        margin: 20
+        maxWidth: 1000,
     },
+    center: {
+        alignContent: 'center',
+        justify: 'center'
+        
+    }
 }));
 
 export default useStyles;

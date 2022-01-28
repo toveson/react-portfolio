@@ -31,11 +31,7 @@ import node from '../img/resumeImages/node-js-log.png';
 import passport from '../img/resumeImages/passport-logo.png';
 import uikit from '../img/resumeImages/uikit-logo.png';
 import resume from '../img/resumeImages/trever-oveson-resume.pdf';
-
-import reactLogo from '../img/resumeImages/react.png';
-
-// import reactLogo from '../img/resumeImages/logo.svg';
-// import './css/App.css'
+import reactLogo from '../img/resumeImages/spinning-react.gif';
 
 import useStyles from './css/MaterialUIStyles';
 
