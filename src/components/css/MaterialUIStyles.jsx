@@ -88,6 +88,10 @@ const useStyles = makeStyles(theme => ({
         fontSize: '0.75rem',
         height: 0
     },
+    // resumeCard: {
+    //     justifyContent: 'center',
+    //     maxWidth: '70%',
+    // },
     headerText: {
         color: '#69DC9E',
         fontSize: '2.5rem',
@@ -115,7 +119,7 @@ const useStyles = makeStyles(theme => ({
         alignContent: 'center',
         justify: 'center'
         
-    }
+    },
 }));
 
 export default useStyles;

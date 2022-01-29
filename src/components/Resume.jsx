@@ -181,16 +181,17 @@ const Resume = () => {
             </Typography>
             <Grid container>
                 {/* resume and languages */}
-                <Grid container  justify='center'>
+                <Grid container justify='center' width='200' >
                     {languages.map((lsItem, key) =>
                         <Grid item key={key} className={classes.root}>
                             <Card>
                                 <CardMedia
                                     component='img'
                                     alt={lsItem.altImg}
-                                    height='100'
                                     image={lsItem.langImg}
-                                    className={lsItem.className}
+                                    height='100'
+                                    width='200'
+                                    className={classes.resumeCard}
                                 />
                                 <CardContent className={classes.textContainer}>
                                     <Typography variant='h5' align={'center'} className={classes.resumeTextColor}>
@@ -218,9 +219,16 @@ const Resume = () => {
                 Skills and Libraries
             </Typography>
 
-            <Grid container>
+            <Grid container justify='center' >
                 {/* skill and Libraries */}
-                <Grid container  justify='center'>
+                <Grid
+                    container
+                    style={{
+                        justifyContent: 'center',
+                        maxWidth: '70%',
+                    }}
+                >
+
                     {skills.map((lsItem, key) =>
                         <Grid item key={key} className={classes.root}>
                             <Card>

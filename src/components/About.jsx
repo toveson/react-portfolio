@@ -32,8 +32,6 @@ const About = () => {
                     <Typography className={classes.aboutMeSubtitle} >
                         is an Inventory Specialist at Clear Home Inc. He has been with the company since 2011 where he has worked his way up from installation technician to lead technician to quality control, and finally to his current position. Throughout his employment he has gained exceptional skills in organization, team coordination, communication, and collaboration.
                     </Typography>
-
-
                     <Typography className={classes.aboutMeSubtitle} >
                         Trever loves spending time with his wife Tasha, and their dog Hopper. He enjoys outdoor activities such as snowboarding and mountain biking. He loves music in a wide variety of genres, spending time with family and friends, and traveling.
                     </Typography>

@@ -118,7 +118,7 @@ const Navbar = () => {
     )
 
     return (
-        <>
+        // <>
             <Box component='nav'>
                 {/* position='fixed'   for sticky navbar */}
                 <AppBar position='static' style={{ background: '#304D6D' }}>
@@ -140,7 +140,7 @@ const Navbar = () => {
                     </Toolbar>
                 </AppBar>
             </Box>
-        </>
+        // </>
     )
 }
 
