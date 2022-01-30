@@ -32,6 +32,7 @@ import passport from '../img/resumeImages/passport-logo.png';
 import uikit from '../img/resumeImages/uikit-logo.png';
 import resume from '../img/resumeImages/trever-oveson-resume.pdf';
 import reactLogo from '../img/resumeImages/spinning-react.gif';
+import reactNativeLogo from '../img/resumeImages/react-native.gif';
 
 import useStyles from './css/MaterialUIStyles';
 
@@ -78,7 +79,7 @@ const skills = [
         docLink: 'https://reactjs.org/'
     },
     {
-        skillImg: reactLogo,
+        skillImg: reactNativeLogo,
         altImg: 'React Logo',
         text: 'React Native',
         docLink: 'https://reactnative.dev/'

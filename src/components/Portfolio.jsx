@@ -83,7 +83,7 @@ const Portfolio = () => {
                         container
                         style={{
                             justifyContent: 'center',
-                            maxWidth: '70%',
+                            maxWidth: '90%',
                         }}
                     >
                         {projectInfo.map((lsItem, key) => (
