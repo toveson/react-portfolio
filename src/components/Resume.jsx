@@ -7,7 +7,8 @@ import {
     CardContent,
     CardMedia,
     Button,
-    Typography
+    Typography,
+    Tooltip
 } from '@material-ui/core';
 import { GetApp, Language } from '@material-ui/icons'
 import useStyles from './css/MaterialUIStyles';
@@ -22,7 +23,8 @@ const languages = [
         text: 'My Resume',
         docLink: IMAGES.resume,
         btnTxt: 'DOWNLOAD',
-        btnIcon: GetApp
+        btnIcon: GetApp,
+        tooltip: 'CLICK TO DOWNLOAD'
     },
     {
         langImg: IMAGES.html,
@@ -30,7 +32,8 @@ const languages = [
         text: 'HTML',
         docLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
         btnTxt: 'INFO',
-        btnIcon: Language
+        btnIcon: Language,
+        tooltip: 'LEARN MORE'
     },
     {
         langImg: IMAGES.css,
@@ -38,7 +41,8 @@ const languages = [
         text: 'CSS',
         docLink: 'https://developer.mozilla.org/en-US/docs/Glossary/CSS',
         btnTxt: 'INFO',
-        btnIcon: Language
+        btnIcon: Language,
+        tooltip: 'LEARN MORE'
     },
     {
         langImg: IMAGES.javascript,
@@ -46,7 +50,8 @@ const languages = [
         text: 'JAVASCRIPT',
         docLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
         btnTxt: 'INFO',
-        btnIcon: Language
+        btnIcon: Language,
+        tooltip: 'LEARN MORE'
     }
 ]
 
@@ -179,15 +184,19 @@ const Resume = () => {
                                     </Typography>
                                 </CardContent>
                                 <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                                    <Button
-                                        variant='outlined' fullWidth={true}
-                                        endIcon={<lsItem.btnIcon style={{ color: '#BA5A31' }} />}
-                                        className={classes.buttonText}
-                                        href={lsItem.docLink}
-                                        target='_blank'
-                                    >
-                                        {lsItem.btnTxt}
-                                    </Button>
+                                    
+                                    <Tooltip title={lsItem.tooltip} placement='bottom' >
+                                        <Button
+                                            variant='outlined' fullWidth={true}
+                                            endIcon={<lsItem.btnIcon style={{ color: '#BA5A31' }} />}
+                                            className={classes.buttonText}
+                                            href={lsItem.docLink}
+                                            target='_blank'
+                                        >
+                                            {lsItem.btnTxt}
+                                        </Button>
+                                    </Tooltip>
+                                
                                 </CardActions>
                             </Card>
                         </Grid>
@@ -208,7 +217,6 @@ const Resume = () => {
                         maxWidth: '70%',
                     }}
                 >
-
                     {skills.map((lsItem, key) =>
                         <Grid item key={key} className={classes.root}>
                             <Card>
@@ -224,22 +232,23 @@ const Resume = () => {
                                     </Typography>
                                 </CardContent>
                                 <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                                    <Button
-                                        variant='outlined' fullWidth={true}
-                                        endIcon={<Language style={{ color: '#BA5A31' }} />}
-                                        className={classes.buttonText}
-                                        href={lsItem.docLink}
-                                        target='_blank'
-                                    >
-                                        info
-                                    </Button>
+                                    <Tooltip title='LEARN MORE' placement='bottom' >
+                                        <Button
+                                            variant='outlined' fullWidth={true}
+                                            endIcon={<Language style={{ color: '#BA5A31' }} />}
+                                            className={classes.buttonText}
+                                            href={lsItem.docLink}
+                                            target='_blank'
+                                        >
+                                            info
+                                        </Button>
+                                    </Tooltip>
                                 </CardActions>
                             </Card>
                         </Grid>
                     )}
                 </Grid>
             </Grid>
-
         </Box>
     )
 }
