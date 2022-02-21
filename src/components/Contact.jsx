@@ -1,14 +1,10 @@
 import React from 'react';
 import Navbar from './Navbar';
 import { withStyles } from '@material-ui/core/styles';
-import { TextField, Typography, Button, Grid, Box } from '@material-ui/core';
+import { TextField, Typography, Button, Grid, Box, Dialog, DialogContent, DialogContentText, DialogTitle } from '@material-ui/core';
 import { Send } from '@material-ui/icons';
-import emailjs from 'emailjs-com';
-import Dialog from '@material-ui/core/Dialog';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
 import useStyles from './css/MaterialUIStyles';
+import emailjs from 'emailjs-com';
 
 function sendEmail(e) {
     e.preventDefault();

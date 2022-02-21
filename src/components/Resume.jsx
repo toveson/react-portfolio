@@ -10,43 +10,22 @@ import {
     Typography
 } from '@material-ui/core';
 import { GetApp, Language } from '@material-ui/icons'
+import useStyles from './css/MaterialUIStyles';
 import Navbar from './Navbar';
 // image imports
-import pdf from '../img/resumeImages/pdf-logo-128.png';
-import materialUi from '../img/resumeImages/material-ui-logo.png';
-import html from '../img/resumeImages/html-5-logo.png';
-import css from '../img/resumeImages/css3-logo.png';
-import javascript from '../img/resumeImages/javascript-logo.png';
-import bootstrap from '../img/resumeImages/bootstrap-logo.png';
-import bulma from '../img/resumeImages/bulma-logo.png';
-import commandLine from '../img/resumeImages/command-line-logo.jpg';
-import express from '../img/resumeImages/express-js-logo.png';
-import git from '../img/resumeImages/Git-logo.png';
-import handlebars from '../img/resumeImages/handlebars-logo.png';
-import heroku from '../img/resumeImages/heroku-logo.png';
-import jquery from '../img/resumeImages/jquery-logo.jpg';
-import mongodb from '../img/resumeImages/mongodb-log.png';
-import mysql from '../img/resumeImages/mysql-logo.png';
-import node from '../img/resumeImages/node-js-log.png';
-import passport from '../img/resumeImages/passport-logo.png';
-import uikit from '../img/resumeImages/uikit-logo.png';
-import resume from '../img/resumeImages/trever-oveson-resume.pdf';
-import reactLogo from '../img/resumeImages/spinning-react.gif';
-import reactNativeLogo from '../img/resumeImages/react-native.gif';
-
-import useStyles from './css/MaterialUIStyles';
+import IMAGES from '../img/index'
 
 const languages = [
     {
-        langImg: pdf,
+        langImg: IMAGES.pdf,
         altImg: 'pdf down load',
         text: 'My Resume',
-        docLink: resume,
+        docLink: IMAGES.resume,
         btnTxt: 'DOWNLOAD',
         btnIcon: GetApp
     },
     {
-        langImg: html,
+        langImg: IMAGES.html,
         altImg: 'html shield',
         text: 'HTML',
         docLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
@@ -54,7 +33,7 @@ const languages = [
         btnIcon: Language
     },
     {
-        langImg: css,
+        langImg: IMAGES.css,
         altImg: 'css shield',
         text: 'CSS',
         docLink: 'https://developer.mozilla.org/en-US/docs/Glossary/CSS',
@@ -62,7 +41,7 @@ const languages = [
         btnIcon: Language
     },
     {
-        langImg: javascript,
+        langImg: IMAGES.javascript,
         altImg: 'javascript shield',
         text: 'JAVASCRIPT',
         docLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
@@ -73,97 +52,97 @@ const languages = [
 
 const skills = [
     {
-        skillImg: reactLogo,
+        skillImg: IMAGES.reactLogo,
         altImg: 'React Logo',
         text: 'React',
         docLink: 'https://reactjs.org/'
     },
     {
-        skillImg: reactNativeLogo,
+        skillImg: IMAGES.reactNativeLogo,
         altImg: 'React Logo',
         text: 'React Native',
         docLink: 'https://reactnative.dev/'
     },
     {
-        skillImg: materialUi,
+        skillImg: IMAGES.materialUi,
         altImg: 'Material UI logo',
         text: 'Material Ui',
         docLink: 'https://material-ui.com/'
     },
     {
-        skillImg: bootstrap,
+        skillImg: IMAGES.bootstrap,
         altImg: 'Bootstrap logo',
         text: 'BOOTSTRAP',
         docLink: 'https://getbootstrap.com/'
     },
     {
-        skillImg: bulma,
+        skillImg: IMAGES.bulma,
         altImg: 'Bulma logo',
         text: 'BULMA',
         docLink: 'https://bulma.io/'
     },
     {
-        skillImg: express,
+        skillImg: IMAGES.express,
         altImg: 'express logo',
         text: 'EXPRESS',
         docLink: 'https://expressjs.com/'
     },
     {
-        skillImg: git,
+        skillImg: IMAGES.git,
         altImg: 'git logo',
         text: 'GIT',
         docLink: 'https://git-scm.com/'
     },
     {
-        skillImg: handlebars,
+        skillImg: IMAGES.handlebars,
         altImg: 'handlebars logo',
         text: 'HANDLEBARS',
         docLink: 'https://handlebarsjs.com/'
     },
     {
-        skillImg: heroku,
+        skillImg: IMAGES.heroku,
         altImg: 'heroku logo',
         text: 'HEROKU',
         docLink: 'https://www.heroku.com/'
     },
     {
-        skillImg: jquery,
+        skillImg: IMAGES.jquery,
         altImg: 'jquery logo',
         text: 'JQUERY',
         docLink: ''
     },
     {
-        skillImg: mongodb,
+        skillImg: IMAGES.mongodb,
         altImg: 'mongodb logo',
         text: 'MONGO DB',
         docLink: ''
     },
     {
-        skillImg: mysql,
+        skillImg: IMAGES.mysql,
         altImg: 'mysql logo',
         text: 'MYSQL',
         docLink: ''
     },
     {
-        skillImg: node,
+        skillImg: IMAGES.node,
         altImg: 'node logo',
         text: 'NODE',
         docLink: ''
     },
     {
-        skillImg: passport,
+        skillImg: IMAGES.passport,
         altImg: 'passport logo',
         text: 'PASSPORT',
         docLink: ''
     },
     {
-        skillImg: uikit,
+        skillImg: IMAGES.uikit,
         altImg: 'uikit logo',
         text: 'UIKIT',
         docLink: ''
     },
     {
-        skillImg: commandLine,
+        skillImg: IMAGES.commandLine,
         altImg: 'command logo',
         text: 'CLI',
         docLink: ''

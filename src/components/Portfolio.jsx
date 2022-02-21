@@ -12,19 +12,15 @@ import {
     Tooltip
 } from '@material-ui/core';
 import { GitHub, Language } from '@material-ui/icons'
-import Navbar from './Navbar';
-import taskably from '../img/projectImages/taskablyDash.png';
-import burger from '../img/projectImages/burger.png';
-import weather from '../img/projectImages/weatherDashboard.png';
-import pets from '../img/projectImages/petsFurever.png';
-import budget from '../img/projectImages/budgetTracker.png';
-import workout from '../img/projectImages/workoutTracker.png';
 import useStyles from './css/MaterialUIStyles';
+import Navbar from './Navbar';
+// images
+import IMAGES from '../img/index'
 
 const projectInfo = [
     {
         projectTitle: 'Taskably 2.0',
-        projectImg: taskably,
+        projectImg: IMAGES.taskably,
         projectAltImg: 'Taskably Dashboard',
         ProjectDescription: 'A program to manage products, orders, employees, and customers.',
         ProjectGitHub: 'https://github.com/toveson/taskably-2.0',
@@ -32,7 +28,7 @@ const projectInfo = [
     },
     {
         projectTitle: 'Pets Furever',
-        projectImg: pets,
+        projectImg: IMAGES.pets,
         projectAltImg: 'pets furever landing page',
         ProjectDescription: 'A simple site to help you find a dog to adopt.',
         ProjectGitHub: 'https://github.com/toveson/pets-furever',
@@ -40,7 +36,7 @@ const projectInfo = [
     },
     {
         projectTitle: 'Weather Dashboard',
-        projectImg: weather,
+        projectImg: IMAGES.weather,
         projectAltImg: 'weather dashboard landing page',
         ProjectDescription: 'Easily search a city to get the current weather as well as a five day forecast.',
         ProjectGitHub: 'https://github.com/toveson/Weather-Dashboard',
@@ -48,7 +44,7 @@ const projectInfo = [
     },
     {
         projectTitle: 'Workout-Tracker',
-        projectImg: workout,
+        projectImg: IMAGES.workout,
         projectAltImg: 'workout tracker dashboard',
         ProjectDescription: 'An app that allows the user to create and continue workouts. The user can also view their workout time and weight from a given day on the dashboard page.',
         ProjectGitHub: 'https://github.com/toveson/Workout-Tracker',
@@ -56,7 +52,7 @@ const projectInfo = [
     },
     {
         projectTitle: 'budget-tracker',
-        projectImg: budget,
+        projectImg: IMAGES.budget,
         projectAltImg: 'budget tracker landing page',
         ProjectDescription: 'A budget app that lets the user enter information on and offline. If entered while offline it will add the new entries when the user goes back online. The user can also Download the app on any device.',
         ProjectGitHub: 'https://github.com/toveson/budget-tracker',
@@ -64,7 +60,7 @@ const projectInfo = [
     },
     {
         projectTitle: 'Eat-Da-Burger-!',
-        projectImg: burger,
+        projectImg: IMAGES.burger,
         projectAltImg: 'eat da burger landing page',
         ProjectDescription: 'A one page app that allows the user to Enter burger names and the devour them!',
         ProjectGitHub: 'https://github.com/toveson/Eat-Da-Burger-',
@@ -118,7 +114,7 @@ const Portfolio = () => {
                                                 </IconButton>
                                             </Tooltip>
 
-                                            <Tooltip title='VIST THE SITE' placement='right'>
+                                            <Tooltip title='VISIT THE SITE' placement='right'>
                                                 <IconButton
                                                     size='small'
                                                     className={classes.buttonContainer}
@@ -128,7 +124,6 @@ const Portfolio = () => {
                                                     <Language style={{ color: '#BA5A31' }} />
                                                 </IconButton>
                                             </Tooltip>
-
 
                                         </CardActions>
                                     </CardActionArea>
