@@ -20,7 +20,8 @@ const useStyles = makeStyles(theme => ({
     },
     mainContainer: {
         background: '#63ADF2',
-        height: '100vh'
+        height: '100vh',
+        // color: '#63ADF2',
     },
     form: {
         top: '50%',

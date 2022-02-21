@@ -8,7 +8,8 @@ import {
     CardContent,
     CardMedia,
     IconButton,
-    Typography
+    Typography,
+    Tooltip
 } from '@material-ui/core';
 import { GitHub, Language } from '@material-ui/icons'
 import Navbar from './Navbar';
@@ -105,22 +106,30 @@ const Portfolio = () => {
                                             </Typography>
                                         </CardContent>
                                         <CardActions style={{ display: 'flex', justifyContent: 'center', background: '#304D6D' }}>
-                                            <IconButton
-                                                size='small'
-                                                className={classes.buttonContainer}
-                                                style={{ background: '#69DC9E' }}
-                                                href={lsItem.ProjectGitHub} target='_blank'
-                                            >
-                                                <GitHub style={{ color: '#BA5A31' }} />
-                                            </IconButton>
-                                            <IconButton
-                                                size='small'
-                                                className={classes.buttonContainer}
-                                                style={{ background: '#69DC9E' }}
-                                                href={lsItem.ProjectLiveSite} target='_blank'
-                                            >
-                                                <Language style={{ color: '#BA5A31' }} />
-                                            </IconButton>
+
+                                            <Tooltip title='SEE THE CODE' placement='left'>
+                                                <IconButton
+                                                    size='small'
+                                                    className={classes.buttonContainer}
+                                                    style={{ background: '#69DC9E' }}
+                                                    href={lsItem.ProjectGitHub} target='_blank'
+                                                >
+                                                    <GitHub style={{ color: '#BA5A31' }} />
+                                                </IconButton>
+                                            </Tooltip>
+
+                                            <Tooltip title='VIST THE SITE' placement='right'>
+                                                <IconButton
+                                                    size='small'
+                                                    className={classes.buttonContainer}
+                                                    style={{ background: '#69DC9E' }}
+                                                    href={lsItem.ProjectLiveSite} target='_blank'
+                                                >
+                                                    <Language style={{ color: '#BA5A31' }} />
+                                                </IconButton>
+                                            </Tooltip>
+
+
                                         </CardActions>
                                     </CardActionArea>
                                 </Card>

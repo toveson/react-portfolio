@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.f4d00ebf.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.9da50833.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.9da50833.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.04f77b19.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.04f77b19.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.cdcd8a89.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.cdcd8a89.js.map",
     "static/js/2.bcbb7199.chunk.js": "/react-portfolio/static/js/2.bcbb7199.chunk.js",
@@ -25,6 +25,7 @@
     "static/media/passport-logo.fae36061.png": "/react-portfolio/static/media/passport-logo.fae36061.png",
     "static/media/petsFurever.ff1286a1.png": "/react-portfolio/static/media/petsFurever.ff1286a1.png",
     "static/media/pro-picture.6a002682.png": "/react-portfolio/static/media/pro-picture.6a002682.png",
+    "static/media/react-native.089b83a0.gif": "/react-portfolio/static/media/react-native.089b83a0.gif",
     "static/media/spinning-react.717ed084.gif": "/react-portfolio/static/media/spinning-react.717ed084.gif",
     "static/media/taskablyDash.6489d5ca.png": "/react-portfolio/static/media/taskablyDash.6489d5ca.png",
     "static/media/trever-avatar.b771790c.png": "/react-portfolio/static/media/trever-avatar.b771790c.png",
@@ -37,6 +38,6 @@
     "static/js/runtime-main.cdcd8a89.js",
     "static/js/2.bcbb7199.chunk.js",
     "static/css/main.f4d00ebf.chunk.css",
-    "static/js/main.9da50833.chunk.js"
+    "static/js/main.04f77b19.chunk.js"
   ]
 }
